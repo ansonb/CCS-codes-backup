@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="E:\Codes\CCS\workspace_v6_0\Copy of MSP-EXP430F5529_Grlib_Example"/>
+			<item value="E:\Codes\CCS\ECW_library\LCD_ImageDraw"/>
+			<item value="E:\Codes\CCS\workspace_v6_0\MSP-EXP430F5529 User Experience"/>
+			<item value="E:\Codes\CCS\ECW_TI"/>
+			<item value="E:\Codes\CCS\workspace_v6_0\ECW"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1025" key="dialogWidth"/>
+		<item value="525" key="dialogHeight"/>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textArray">
+			<item value="ter"/>
+			<item value="target"/>
+		</list>
+		<list key="orderedElements">
+			<item value="org.eclipse.tm.terminal.view.TerminalView"/>
+			<item value="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView"/>
+		</list>
+		<list key="textEntries">
+			<item value="1"/>
+			<item value="1"/>
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+		<item value="103" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ShowViewDialog">
+		<item value="311" key="DIALOG_WIDTH"/>
+		<item value="92" key="DIALOG_Y_ORIGIN"/>
+		<item value="357" key="DIALOG_X_ORIGIN"/>
+		<item value="439" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+</section>

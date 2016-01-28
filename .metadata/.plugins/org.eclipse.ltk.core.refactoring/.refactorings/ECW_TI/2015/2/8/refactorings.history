@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ECW_TI/Debug/wheel_button.out&apos; to &apos;ECW_TI.out&apos;" description="Rename resource &apos;wheel_button.out&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/wheel_button.out" name="ECW_TI.out" stamp="1424264112099" updateReferences="true"/>
+</session>

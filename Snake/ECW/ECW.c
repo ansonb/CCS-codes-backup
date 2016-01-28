@@ -1,0 +1,124 @@
+#include <msp430.h>
+#include <stdio.h>
+
+void stop_watchdog()
+{
+    WDTCTL=WDTPW|WDTHOLD;
+}
+
+void adc_init()
+{
+    ADC12CTL0 = ADC12SHT0_9|ADC12ON;       // Sampling time, ADC12 on
+    ADC12CTL1 = ADC12SHP;                  // Use sampling timer
+    ADC12MCTL0 = ADC12INCH_6;
+    ADC12CTL0 |= ADC12ENC;
+    P6SEL |= BIT6 ;                        // P6.6 ADC option select
+    ADC12CTL0 &= ~ADC12SC;                 // Clear the ADC start bit
+}
+
+int adc_read()
+{
+    ADC12CTL0 |= ADC12SC + ADC12ENC;       // Start sampling/conversion
+    while (ADC12CTL1 & ADC12BUSY);         // Wait until conversion is complete
+    return ADC12MEM0 & 0x0FFF;             // Mask 4 upper bits of ADC12MEM0(12 bit ADC)
+}
+
+void usart_init()
+{
+    P4SEL = BIT4+BIT5;
+    UCA1CTL1 |= UCSWRST;                      // **Put state machine in reset**
+    UCA1CTL1 |= UCSSEL_1;                     // CLK = ACLK
+    UCA1BR0 = 0x03;                           // 32kHz/9600=3.41 (see User's Guide)
+    UCA1BR1 = 0x00;                           //
+    UCA1MCTL = UCBRS_3+UCBRF_0;               // Modulation UCBRSx=3, UCBRFx=0
+    UCA1CTL1 &= ~UCSWRST;                     // **Initialize USCI state machine**
+}
+
+char usart_receive_char()
+{
+    while(!(UCA1IFG & UCRXIFG));              // Wait for a character to be received
+    char ch = UCA1RXBUF;
+    UCA1IFG &= ~UCRXIFG;
+    return ch;
+}
+
+void usart_transmit_char(char ch)
+{
+    while(!(UCA1IFG & UCTXIFG));              // Wait until transmit buffer is empty
+    UCA1TXBUF = ch;
+}
+
+void usart_transmit_string(char* str)
+{
+    while(*str)
+    {
+        usart_transmit_char(*str);
+        ++ str;
+    }
+}
+
+void usart_transmit_int_as_string(int i)
+{
+    char num_string[6];
+    sprintf(num_string,"%d",i);
+    usart_transmit_string(num_string);
+}
+
+short isCharReceived;
+
+char receivedChar = 0;
+
+void usart_init_async()
+{
+    usart_init();
+    UCA1IE |= UCRXIE;  // Enable USCI_A1 RX interrupt
+    isCharReceived = 0;
+    __enable_interrupt();
+}
+
+short usart_receive_char_async(char* ch)
+{
+    if(isCharReceived)
+    {
+        *ch = receivedChar;
+        isCharReceived = 0;
+        return 1;
+    }
+    else return 0;
+}
+
+void delay_us(int us)
+{
+    while(us --) __delay_cycles(1);
+}
+
+void delay_ms(int ms)
+{
+    while(ms --) __delay_cycles(1087);
+}
+
+void delay_s(int s)
+{
+    while(s --) __delay_cycles(1086957);
+}
+
+#if defined(__TI_COMPILER_VERSION__) || defined(__IAR_SYSTEMS_ICC__)
+#pragma vector=USCI_A1_VECTOR
+__interrupt void USCI_A1_ISR(void)
+#elif defined(__GNUC__)
+void __attribute__ ((interrupt(USCI_A1_VECTOR))) USCI_A1_ISR (void)
+#else
+#error Compiler not supported!
+#endif
+{
+  switch(__even_in_range(UCA1IV,4))
+  {
+  case 0:break;                             // Vector 0 - no interrupt
+  case 2:                                   // Vector 2 - RXIFG
+      isCharReceived = 1;
+      receivedChar = UCA1RXBUF;
+      break;
+  case 4:break;                             // Vector 4 - TXIFG
+  default: break;
+  }
+}

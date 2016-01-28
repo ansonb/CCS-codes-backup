@@ -1,0 +1,124 @@
+
+**** Build of configuration Debug for project TI_UI1 ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 2: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+'Building file: ../grlib/string.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="grlib/string.pp" --obj_directory="grlib"  "../grlib/string.c"
+"../grlib/string.c", line 35: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../grlib/string.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [grlib/string.obj] Error 1
+'Building file: ../fonts/fontfixed6x8.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="fonts/fontfixed6x8.pp" --obj_directory="fonts"  "../fonts/fontfixed6x8.c"
+"../fonts/fontfixed6x8.c", line 32: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../fonts/fontfixed6x8.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [fonts/fontfixed6x8.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/dma.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/dma.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/dma.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/dma.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/dma.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/dma.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/flash.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/flash.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/flash.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/flash.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/flash.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/flash.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/mpy32.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/mpy32.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/mpy32.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/mpy32.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/mpy32.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/mpy32.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/pmm.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/pmm.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/pmm.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/pmm.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/pmm.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/pmm.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/ram.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/ram.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/ram.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/ram.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/ram.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/ram.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/sfr.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/sfr.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/sfr.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/sfr.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/sfr.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/sfr.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/sys.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/sys.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/sys.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/sys.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/sys.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/sys.obj] Error 1
+'Building file: ../driverlib/MSP430F5xx_6xx/deprecated/ucs.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="driverlib/MSP430F5xx_6xx/deprecated/ucs.pp" --obj_directory="driverlib/MSP430F5xx_6xx/deprecated"  "../driverlib/MSP430F5xx_6xx/deprecated/ucs.c"
+"../driverlib/MSP430F5xx_6xx/deprecated/ucs.c", line 45: fatal error #1965: cannot open source file "inc/hw_regaccess.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP430F5xx_6xx/deprecated/ucs.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP430F5xx_6xx/deprecated/ucs.obj] Error 1
+'Building file: ../LcdDriver/Dogs102x64_UC1701.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="LcdDriver/Dogs102x64_UC1701.pp" --obj_directory="LcdDriver"  "../LcdDriver/Dogs102x64_UC1701.c"
+"../LcdDriver/Dogs102x64_UC1701.c", line 33: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/Dogs102x64_UC1701.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [LcdDriver/Dogs102x64_UC1701.obj] Error 1
+'Building file: ../Images/LPRocket_96x37.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="Images/LPRocket_96x37.pp" --obj_directory="Images"  "../Images/LPRocket_96x37.c"
+
+**** Build of configuration Debug for project TI_UI1 ****
+
+!CommandLauncher.error.commandCanceled!
+Error: Program "c:/ti/ccsv6/utils/bin/gmake" is not found in PATH
+
+PATH=[C:\ti\ccsv6\utils\bin\gmake;C:\ti\ccsv6\ccs_base\common\bin;C:\ti\ccsv6\ccs_base\common\uscif;C:\ti\ccsv6\ccs_base\DebugServer\license;C:/ti/ccsv6/eclipse/jre/bin/client;C:/ti/ccsv6/eclipse/jre/bin;C:/ti/ccsv6/eclipse/jre/lib/i386;C:\WinAVR-20100110\bin;C:\WinAVR-20100110\utils\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MATLAB\R2009b\runtime\win64;C:\Program Files\MATLAB\R2009b\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;c:\ti\ccsv6\utils\bin\gmake;C:\ti\ccsv6\ccs_base\common\bin;C:\ti\ccsv6\ccs_base\common\uscif;C:\ti\ccsv6\ccs_base\DebugServer\license;C:\ti\ccsv6\eclipse\jre\bin\client;C:\ti\ccsv6\eclipse\jre\bin;C:\ti\ccsv6\eclipse\jre\lib\i386;;C:\ti\ccsv6\eclipse;;C:\ti\ccsv6\ccs_base\DebugServer\drivers]
+
+**** Build Finished ****

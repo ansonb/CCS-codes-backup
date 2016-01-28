@@ -1,0 +1,46 @@
+#include <msp430.h> 
+#include "SDCard.h"
+/*
+ * main.c
+ */
+int main(void) {
+    WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
+	
+    WriteFile("Xyz.txt", "Hello from MSP430F5529", 22);
+
+    // Result code
+        FRESULT rc;
+        // File system object
+        FATFS fatfs;
+        // File object
+        FIL fil;
+        UINT bw;
+
+        // Register volume work area (never fails)
+        f_mount(0, &fatfs);
+
+        // Open file
+        rc = f_open(&fil, "Xyz.txt", FA_WRITE|FA_CREATE_ALWAYS);
+        if (rc)
+        {
+            die(rc);
+        }
+
+        // Write to file
+        rc = f_write(&fil, "This is MSP430F5529 speaking", 19, &bw);
+        if (rc)
+        {
+            die(rc);
+        }
+
+        // Close the file
+        rc = f_close(&fil);
+        if (rc)
+        {
+            die(rc);
+        }
+
+	P1DIR |= 0x01;
+    P1OUT |= 0x01;
+    return 0;
+}

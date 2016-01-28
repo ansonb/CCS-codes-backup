@@ -1,0 +1,3 @@
+RTSC_PRODUCTS=com.ti.mcu.msp430.driverlib\:1.97.0.19;com.ti.mcu.msp430ware\:1.97.0.47;
+XDC_PATH=C\:/ti/msp430/MSP430ware_1_97_00_47/driverlib/packages;C\:/ti/msp430/MSP430ware_1_97_00_47/driverlib;C\:/ti/msp430/MSP430ware_1_97_00_47/driverlib/packages;C\:/ti/msp430/MSP430ware_1_97_00_47/driverlib;
+eclipse.preferences.version=1

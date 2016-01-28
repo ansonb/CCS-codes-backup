@@ -1,0 +1,54 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc932.c \
+C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc936.c \
+C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc949.c \
+C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc950.c \
+C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/ccsbcs.c \
+C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/syscall.c 
+
+OBJS += \
+./FatFs/option/cc932.obj \
+./FatFs/option/cc936.obj \
+./FatFs/option/cc949.obj \
+./FatFs/option/cc950.obj \
+./FatFs/option/ccsbcs.obj \
+./FatFs/option/syscall.obj 
+
+C_DEPS += \
+./FatFs/option/cc932.pp \
+./FatFs/option/cc936.pp \
+./FatFs/option/cc949.pp \
+./FatFs/option/cc950.pp \
+./FatFs/option/ccsbcs.pp \
+./FatFs/option/syscall.pp 
+
+C_DEPS__QUOTED += \
+"FatFs\option\cc932.pp" \
+"FatFs\option\cc936.pp" \
+"FatFs\option\cc949.pp" \
+"FatFs\option\cc950.pp" \
+"FatFs\option\ccsbcs.pp" \
+"FatFs\option\syscall.pp" 
+
+OBJS__QUOTED += \
+"FatFs\option\cc932.obj" \
+"FatFs\option\cc936.obj" \
+"FatFs\option\cc949.obj" \
+"FatFs\option\cc950.obj" \
+"FatFs\option\ccsbcs.obj" \
+"FatFs\option\syscall.obj" 
+
+C_SRCS__QUOTED += \
+"C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc932.c" \
+"C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc936.c" \
+"C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc949.c" \
+"C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/cc950.c" \
+"C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/ccsbcs.c" \
+"C:/ti/msp430/MSP430ware_1_97_00_47/examples/boards/MSP-EXP430F5529/src/FatFs/option/syscall.c" 
+
+

@@ -1,0 +1,112 @@
+#include <ECW.h>
+#include "SDCard.h"
+/*
+ * main.c
+ */
+
+FRESULT rc;
+// File system object
+FATFS fatfs;
+// File object
+FIL fil;
+UINT br, bw;
+
+void appendedWrite(const char *filename, char *text, int size){
+    //Open file
+    rc = f_open(&fil, filename, FA_WRITE|FA_OPEN_ALWAYS);
+    if (rc)
+    {
+        die(rc);
+    }
+
+    // Write to file
+    rc = f_write(&fil, text, size, &bw);
+    if (rc)
+    {
+        die(rc);
+    }
+
+    // Close the file
+    rc = f_close(&fil);
+    if (rc)
+    {
+        die(rc);
+    }
+}
+
+
+void read(const char *filename, char *text){
+    // Open file
+    rc = f_open(&fil, filename, FA_READ);
+
+    if (rc)
+    {
+        die(rc);
+    }
+
+    //Read from file
+    rc = f_read(&fil, rBuffer, 29, &br);
+    if (rc)
+    {
+        die(rc);
+    }
+
+    // Close the file
+    rc = f_close(&fil);
+    if (rc)
+    {
+        die(rc);
+    }
+}
+int main(void) {
+    WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
+
+    f_mount(0, &fatfs);
+
+    appendedWrite("Xyz.txt", "Hello", 5);
+
+    char *rBuffer = (char *)malloc(29*sizeof(char));
+    read("Xyz.txt", );
+
+    lcd_init();
+    print_int(0, 0, br);
+    print_string(0, 30, rBuffer);
+
+    //WriteFile("Xyz.txt", "Hello from MSP430F5529", 22);
+/*
+    // Result code
+        FRESULT rc;
+        // File system object
+        FATFS fatfs;
+        // File object
+        FIL fil;
+        UINT bw;
+
+        // Register volume work area (never fails)
+        f_mount(0, &fatfs);
+
+        // Open file
+        rc = f_open(&fil, "Xyz.txt", FA_WRITE|FA_OPEN_ALWAYS);
+        if (rc)
+        {
+            die(rc);
+        }
+
+        // Write to file
+        rc = f_write(&fil, "This is MSP430F5529 speaking", 28, &bw);
+        if (rc)
+        {
+            die(rc);
+        }
+
+        // Close the file
+        rc = f_close(&fil);
+        if (rc)
+        {
+            die(rc);
+        }*/
+
+	P1DIR |= 0x01;
+    P1OUT |= 0x01;
+    return 0;
+}
